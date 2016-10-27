@@ -1,13 +1,20 @@
+/**********************************************************
+ * @author Carlos Almeraz, Edgar Ortiz, Fernando Gonzalez *
+ * Calculadore de Stack                                   *
+ * @date 27/10/2016                                       *
+ * @version 1.0.1                                         *
+ **********************************************************
+ * @brief Este archivo contiene las funciones de una      *
+ * calculadora de stack.                                  *
+ **********************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 
-int push (int * stack, int pos){
-  int val = 0;
-  printf("Que valor desea ingresar?\n$ ");
-  scanf("%d",&val);
+void push (int * stack, int pos, int val){
   stack[pos] = val;
-  return val;
+  return;
 }
 
 int pop (int * stack, int pos){
@@ -29,4 +36,40 @@ void print (int * stack){
     else
       printf("\n[ %d  ]",stack[i]);
   }
+}
+
+int suma(int a, int b){
+
+  int res;
+
+  res = a + b;
+
+  return res;
+}
+
+int resta(int a, int b){
+
+  int res;
+
+  res = a - b;
+
+  return res;
+}
+
+int multiplicacion(int a, int b){
+
+  int res;
+
+  res = a * b;
+
+  return res;
+}
+
+int division(int a, int b){
+
+  int res;
+
+  res = a / b;
+
+  return res;
 }
